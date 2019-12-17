@@ -1,5 +1,3 @@
-mod VM;
-
 enum Instructions {
   BR = 0, /* branch */
   ADD,    /* add  */
@@ -27,9 +25,4 @@ impl Instructions {
       registers[Registers::PC as usize] += pc_offset;
     }
   }
-}
-
-fn main() {
-  let r = Registers::init();
-  print!("start {}", r[0]);
 }
