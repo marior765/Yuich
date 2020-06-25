@@ -1,3 +1,4 @@
+// pub mod GC;
 pub mod VM;
 
 fn main() {
